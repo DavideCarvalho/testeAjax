@@ -67,7 +67,7 @@
         <script>
             $('.voltar-page').on('click', function () {
                 $("#chk").prop('checked', false);
-            })
+            });
         </script>
     </body>
 </html>
