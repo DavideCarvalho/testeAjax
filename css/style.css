@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow:hidden;
 }
 
 html, body {
@@ -120,4 +121,18 @@ html, body {
     color:red;
     font-size:20px;
     background-color:rgba(236,100,75,.4);
+}
+
+.fotoCentro{
+    position: absolute;
+    display: -webkit-flex;
+    display: flex;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 100vw;
 }
