@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: #1890d4; /* Old browsers */
+    background: -moz-linear-gradient(135deg, #02a7ec, #019cdd); /* FF3.6-15 */
+    background: -webkit-linear-gradient(135deg, #02a7ec, #019cdd); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #02a7ec, #019cdd); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1890d4', endColorstr='#3fadf2',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+}
+
+.menu-icon{
+    position: fixed;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #02a7ec;
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+    left: 0;
+    top: 0;
+}
+
+.menu-icon:hover{
+    background-color:white;
+    color: #019cdd;
+}
+
+.menu{
+    height: 100%;
+    position: fixed;
+    background-color:#222;
+    top:0;
+    overflow:hidden;
+    transition:all .2s;
+}
+
+#principal{
+    width: 300px;
+    left:-300px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li a{
+    display: block;
+    font-size: 18px;
+    font-family: 'Arial';
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color:#ccc;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.menu ul li span{
+    float: right;
+    padding-right: 10px;
+}
+
+.menu ul li a:hover{
+    background-color:#8b859a;
+}
+
+.voltar, .voltar-page{
+    margin-top: 60px;
+    background-color:#111;
+    border-left: solid 5px #444;
+}
+
+#chk:checked ~ #principal{
+    transform: translateX(300px);
+}
+
+.tirarmenu{
+    transform: translateX(-300px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+
+#chk:checked ~ .bg{
+    display: block;
+}
+
+#cursos, #contato{
+    width: 250px;
+    left: -250px;
+}
+
+#cursos:target, #contato:target{
+    transform: translateX(250px);
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.5);
+}
+
+section{
+    z-index: 0;
+}
+
+.atualizacoes{
+    margin-top: 60px;
+}
+
+.atualizacoes h1{
+    padding-left: 15px;
+    padding-top: 15px;
+    font-family: "Poiret One",cursive;
+}
+
+.slider{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+}
+
+.compras{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.ultimas-compras h1{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Poiret One",cursive;
+}
+
+.compra{
+    width:300px;
+    height: 300px;
+    margin: auto;
+    background: grey;
+}

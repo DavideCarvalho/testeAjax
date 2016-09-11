@@ -1,3 +1,30 @@
+@media only screen and (max-width:900px){
+    .compra{
+        width:250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:749px){
+    .compra{
+        width:200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:603px){
+    .compras{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .compra{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width:479px){
     .linha p{
         font-size: 50px;

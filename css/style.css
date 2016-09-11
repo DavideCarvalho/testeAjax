@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 html, body {
@@ -12,6 +12,24 @@ html, body {
 }
 
 .linha{
+    width:100vw;
+    height: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1890d4+0,2989d8+50,207cca+51,3fadf2+100 */
+    background: #1890d4; /* Old browsers */
+    background: -moz-linear-gradient(135deg, #02a7ec, #019cdd); /* FF3.6-15 */
+    background: -webkit-linear-gradient(135deg, #02a7ec, #019cdd); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #02a7ec, #019cdd); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1890d4', endColorstr='#3fadf2',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+}.linha{
     width:100vw;
     height: 300px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1890d4+0,2989d8+50,207cca+51,3fadf2+100 */
@@ -39,6 +57,18 @@ html, body {
 }
 
 .wrapper {
+    height: 100vh;
+    min-height: 100vh;
+    width:100vw;
+    min-width: 100vw;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+}.wrapper {
     height: 100vh;
     min-height: 100vh;
     width:100vw;
@@ -123,8 +153,6 @@ html, body {
 
 .fotoCentro{
     position: absolute;
-    display: -webkit-flex;
-    display: flex;
     bottom: 0;
     display: -webkit-flex;
     display: flex;
