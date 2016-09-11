@@ -12,9 +12,13 @@ $(document).ready(function(){
             data:data,
             dataType:'json',
             success:function(json){
-                if (json.status == "okay"){
-                    console.log("Logado com sucesso");
+                if (json.status === "okay"){
+                    $('.invalido').css("background-color","rgba(135,211,124,.4)");
+                    $('.invalido').css("color","green");
+                    $('.invalido').text("Logado com sucesso");
                 } else {
+                    $('.invalido').css("background-color","rgba(236,100,75,.4)");
+                    $('.invalido').css("color","red");
                     $('.invalido').text("Usuário ou senha invalidos");
                 }
             },
