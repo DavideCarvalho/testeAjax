@@ -10,6 +10,33 @@ html, body {
     min-width: 100vw;
 }
 
+.linha{
+    width:100vw;
+    height: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1890d4+0,2989d8+50,207cca+51,3fadf2+100 */
+    background: #1890d4; /* Old browsers */
+    background: -moz-linear-gradient(90deg, #02a7ec, #019cdd); /* FF3.6-15 */
+    background: -webkit-linear-gradient(90deg, #02a7ec, #019cdd); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(90deg, #02a7ec, #019cdd); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1890d4', endColorstr='#3fadf2',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+}
+
+.linha p{
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
 .wrapper {
     height: 100vh;
     min-height: 100vh;
@@ -21,16 +48,27 @@ html, body {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+
 }
 
 .wrapper .login {
     padding: 40px;
     border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 20px;
     text-align: center;
-    -webkit-box-shadow: 2px 2px 33px 9px rgba(0,0,0,0.62);
-    -moz-box-shadow: 2px 2px 33px 9px rgba(0,0,0,0.62);
-    -o-box-shadow: 2px 2px 33px 9px rgba(0,0,0,0.62);
-    box-shadow: 2px 2px 33px 9px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+    -o-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+    background:white;
+    width: 300px;
+}
+
+.login h1{
+    font-family: 'Poiret One', cursive;
+    font-weight: normal;
+    font-size:50px;
+    margin-top:-30px;
 }
 
 .login label{
@@ -39,17 +77,29 @@ html, body {
 }
 
 .login input{
-    padding:10px;
+    padding:5px;
 }
 
 .login input:hover, .login input:focus{
     border:2px solid dodgerblue;
 }
 
-button{
+.botao{
     display:block;
     margin: 10px auto;
-    padding:5px;
+    padding:10px;
+    text-decoration: none;
+    color:#3498db;
+    border: 2px solid #3498db;
+    border-radius: 10px 10px 10px 10px;
+    width:50%;
+    height: 20px;
+    transition: all .3s;
 }
 
-
+.botao:hover{
+    color:white;
+    background-color:#3498db;
+    border: 2px solid white;
+    transition: all .3s;
+}
