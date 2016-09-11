@@ -13,13 +13,23 @@
         <div class="wrapper">
             <div class="login">
                 <h1>Login</h1>
-                <label>RA</label>
-                <input type="text" name="login" placeholder="Login">
-                <label>Senha</label>
-                <input type="password" name="senha" placeholder="Senha">
-                <a href="#" class="botao">Entrar</a>
+                <form method="POST" id="form">
+                    <div class="input-login">
+                        <label>RA</label>
+                        <input type="text" name="login" placeholder="Login">
+                    </div>
+                    <div class="input-senha">
+                        <label>Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <button type="submit" class="botao">Entrar</button>
+                    <p class="invalido"></p>
+                </form>
             </div>
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
 

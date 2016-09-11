@@ -73,7 +73,16 @@ html, body {
 
 .login label{
     display: block;
-    padding:10px;
+    padding-bottom: 5px;
+}
+
+.login .input-login{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login .input-senha{
+    padding-bottom: 10px;
 }
 
 .login input{
@@ -86,8 +95,9 @@ html, body {
 
 .botao{
     display:block;
-    margin: 10px auto;
+    margin: 5px auto;
     padding:10px;
+    padding-bottom:20px;
     text-decoration: none;
     color:#3498db;
     border: 2px solid #3498db;
@@ -95,6 +105,7 @@ html, body {
     width:50%;
     height: 20px;
     transition: all .3s;
+    background:white;
 }
 
 .botao:hover{
@@ -102,4 +113,11 @@ html, body {
     background-color:#3498db;
     border: 2px solid white;
     transition: all .3s;
+    cursor: pointer;
+}
+
+.invalido{
+    color:red;
+    font-size:20px;
+    background-color:rgba(236,100,75,.4);
 }
