@@ -1,11 +1,23 @@
-@media only screen and (max-width:900px){
+@media only screen and (max-width:900px){    
     .compra{
         width:250px;
         height: 250px;
     }
 }
 
+@media only screen and (max-width:788px){    
+    .linha p{
+        position:absolute;
+        top: 20px;
+    }
+}
+
 @media only screen and (max-width:749px){
+    .linha p{
+        position:absolute;
+        top: 20px;
+    }
+    
     .compra{
         width:200px;
         height: 200px;
@@ -27,7 +39,17 @@
 
 @media only screen and (max-width:479px){
     .linha p{
+        font-size: 50px;
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .linha p{
         font-size: 40px;
+        position: absolute;
+        top: 60px;
     }
 }
 
@@ -35,7 +57,7 @@
     .linha p{
         font-size: 30px;
         position: absolute;
-        top:22px;
+        top: 80px;
     }
 
     .fotoCentro{
